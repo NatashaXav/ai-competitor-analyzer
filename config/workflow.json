@@ -5,7 +5,7 @@
   "inputs": {
     "competitor_urls": ["https://competitor1.com", "https://competitor2.com"],
     "analysis_frequency": "weekly",
-    "openai_api_key": "${OPENAI_API_KEY}"
+    "gemini_api_key": "${GEMINI_API_KEY}"
   },
   "steps": [
     {
@@ -31,9 +31,9 @@
     {
       "id": 3,
       "action": "ai_analysis",
-      "tool": "OpenAI GPT-4",
+      "tool": "Google Gemini",
       "config": {
-        "model": "gpt-4-turbo",
+        "model": "gemini-1.5-flash",
         "prompt": "Analyze this competitor website content and extract:\n1. Value proposition (main message)\n2. Target audience (who they serve)\n3. Pricing strategy (if available)\n4. Key differentiators\n5. Content themes\n\nWebsite content:\n{{clean_text}}\n\nFormat as JSON.",
         "output": "analysis_json"
       }
@@ -51,8 +51,9 @@
     {
       "id": 5,
       "action": "generate_report",
-      "tool": "OpenAI GPT-4",
+      "tool": "Google Gemini",
       "config": {
+        "model": "gemini-1.5-flash",
         "prompt": "Create a competitive intelligence summary comparing these analyses:\n{{all_competitor_analyses}}\n\nFocus on: market positioning gaps, pricing opportunities, content strategy insights.",
         "output": "executive_summary"
       }

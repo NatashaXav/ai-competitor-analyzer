@@ -2,7 +2,7 @@
 
 **Business Goal**: Automate competitive intelligence gathering to identify market opportunities and positioning gaps
 
-**Tools**: OpenAI API, Web Scraping, No-Code Automation (Make.com/Zapier)
+**Tools**: Google Gemini AI, Web Scraping, No-Code Automation (Make.com/Zapier)
 
 **Business Impact**: Saves 10 hours/week of manual research, costs $50/month vs $1,000/report from agencies (20x ROI)
 
@@ -27,7 +27,7 @@ Marketing teams spend countless hours manually:
 
 An AI-powered automation workflow that:
 1. Scrapes competitor websites weekly
-2. Extracts key information using GPT-4
+2. Extracts key information using Gemini AI
 3. Identifies positioning gaps and opportunities
 4. Generates executive summaries automatically
 5. Alerts team to significant changes
@@ -51,7 +51,7 @@ An AI-powered automation workflow that:
 
 1. **Web Scraping** → Extract homepage, pricing, about pages
 2. **Content Cleaning** → Remove HTML, keep meaningful text
-3. **AI Analysis** (GPT-4) → Extract:
+3. **AI Analysis** (Gemini 1.5) → Extract:
    - Value proposition
    - Target audience
    - Pricing strategy
@@ -123,7 +123,7 @@ See `scripts/analyzer.py` for Python implementation.
 - **Annual cost**: £14,000
 
 **Automated Process**:
-- OpenAI API: £50/month
+- Gemini API: £0-50/month (free tier available)
 - Setup time: 2 hours one-time
 - **Annual cost**: £600
 
@@ -133,7 +133,7 @@ See `scripts/analyzer.py` for Python implementation.
 
 ## Skills Demonstrated
 
-- **AI/ML Application**: Practical use of GPT-4 for business intelligence
+- **AI/ML Application**: Practical use of Gemini AI for business intelligence
 - **Automation**: Workflow design and no-code tool expertise
 - **Strategic Thinking**: Translating data into competitive insights
 - **Marketing Intelligence**: Understanding what matters for positioning
@@ -160,4 +160,4 @@ ai-competitor-analyzer/
 **Date**: January 2025
 **Status**: Production-Ready
 
-**Note**: Requires OpenAI API key (obtain from platform.openai.com)
+**Note**: Requires Gemini API key (get free key from makersuite.google.com/app/apikey)
